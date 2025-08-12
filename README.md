@@ -22,9 +22,9 @@ A simple React/Next.js app that tokenizes input text into tokens of different ty
 
 ## Demo
 1. Text Encoding
-![Text Encoding](/tokenizer/public/images/1.png)
+![Text Encoding](public/images/1.png)
 2. Text Decoding
-![Text Decoding](/tokenizer/public/images/2.png)
+![Text Decoding](public/images/2.png)
 
 ---
 
