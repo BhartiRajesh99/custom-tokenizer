@@ -1,6 +1,6 @@
 # Custom Tokenizer
 
-A simple React/Next.js app that tokenizes input text into tokens of different types (words, numbers, punctuation, whitespace), assigns each token a unique numeric ID (persisted in localStorage), and provides decoding of token ID sequences back to text.
+A simple Next.js app that tokenizes input text into tokens of different types (words, numbers, punctuation, whitespace), assigns each token a unique numeric ID (persisted in localStorage), and provides decoding of token ID sequences back to text.
 
 ---
 
@@ -21,10 +21,11 @@ A simple React/Next.js app that tokenizes input text into tokens of different ty
 ---
 
 ## Demo
+
 1. Text Encoding
-![Text Encoding](public/images/1.png)
+   ![Text Encoding](public/images/1.png)
 2. Text Decoding
-![Text Decoding](public/images/2.png)
+   ![Text Decoding](public/images/2.png)
 
 ---
 
@@ -41,21 +42,25 @@ A simple React/Next.js app that tokenizes input text into tokens of different ty
 
 ```bash
 git clone https://github.com/BhartiRajesh99/custom-tokenizer.git
-cd custom-tokenizer 
+cd custom-tokenizer
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
 yarn
 ```
+
 3. Run the development server:
+
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+
 4. Open http://localhost:3000 to view in your browser.
 
 ## Learn More
@@ -68,5 +73,3 @@ yarn dev
 - [Using localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — Browser API for persistent storage.
 
 Feel free to explore these resources to understand the technologies and concepts used in this project.
-
-
