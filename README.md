@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Custom Tokenizer
+
+A simple React/Next.js app that tokenizes input text into tokens of different types (words, numbers, punctuation, whitespace), assigns each token a unique numeric ID (persisted in localStorage), and provides decoding of token ID sequences back to text.
+
+---
+
+## Features
+
+- **Tokenization**: Splits input text into tokens by type:
+  - Whitespace
+  - Words (alphabetic)
+  - Numbers (digits)
+  - Punctuation
+- **Token IDs**: Each unique token is assigned a persistent numeric ID stored in `localStorage`.
+- **Encode & Decode**:
+  - Displays encoded tokens with their IDs.
+  - Allows decoding from comma-separated token ID inputs.
+- **Token Visualization**: Shows tokens with whitespace replaced by dots (`.`) to visualize spaces.
+- **Persistent token dictionary** in browser localStorage for consistent ID assignment across sessions.
+
+---
+
+## Demo
+1. Text Encoding
+![Text Encoding](/tokenizer/public/images/1.png)
+2. Text Decoding
+![Text Decoding](/tokenizer/public/images/2.png)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/BhartiRajesh99/custom-tokenizer.git
+cd custom-tokenizer 
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
+```
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open http://localhost:3000 to view in your browser.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) — Official Next.js docs for building React apps.
+- [React Documentation](https://reactjs.org/docs/getting-started.html) — Learn about React fundamentals.
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) — Deep dive into TypeScript.
+- [Tailwind CSS](https://tailwindcss.com/docs) — Utility-first CSS framework used for styling.
+- [MDN Web Docs - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) — Learn how regex works in JavaScript.
+- [Using localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — Browser API for persistent storage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to explore these resources to understand the technologies and concepts used in this project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
